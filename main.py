@@ -1,5 +1,9 @@
+import random
+
 import pygame as pg
 from OpenGL.GL import *
+
+from new.checkers.checkers.piece import Piece
 
 
 class Checkers:
@@ -30,8 +34,10 @@ class Checkers:
 
         pg.quit()
 
+players = ['x', 'o']
+turn = random.randrange(2)
+print(turn)
+print("%s's turn" % players[turn ])
 
-if __name__ == "__main__":
-    checkers = Checkers()
 
 
