@@ -3,7 +3,7 @@ import random
 import pygame as pg
 from OpenGL.GL import *
 
-from new.checkers.checkers.piece import Piece
+
 
 
 class Checkers:
