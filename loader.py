@@ -148,12 +148,13 @@ class App:
         self.clock = pg.time.Clock()
         # initialise opengl
         glClearColor(0.1, 0.2, 0.2, 1)
-        self.shader = self.createShader("vertex_shader.txt", "fragment_shader.txt")
+        self.shader = self.createShader("shaders/vertex_shader.txt", "shaders/fragment_shader.txt")
         glUseProgram(self.shader)
         glUniform1i(glGetUniformLocation(self.shader, "imageTexture"), 0)
         glEnable(GL_DEPTH_TEST)
 
         self.cube_mesh = Mesh("checker_board.obj")
+        self.wood_texture = Material("images/checkers_texture.jpg")
 
         self.cube = Cube(
             position=[0, 0, -3],
