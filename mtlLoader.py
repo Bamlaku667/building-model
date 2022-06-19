@@ -2,7 +2,7 @@ import pygame
 from OpenGL.GL import  *
 
 
-def MTL(filename='checker_board3.mtl'):
+def MTL(filename='obj/checker_board3.mtl'):
     contents = {}
     mtl = None
     for line in open(filename, "r"):

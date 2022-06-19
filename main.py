@@ -22,7 +22,7 @@ glEnable(GL_COLOR_MATERIAL)
 glEnable(GL_DEPTH_TEST)
 glShadeModel(GL_SMOOTH)
 
-obj = OBJ('checker_board3.obj')
+obj = OBJ('obj/checker_board3.obj')
 
 clock = pygame.time.Clock()
 
